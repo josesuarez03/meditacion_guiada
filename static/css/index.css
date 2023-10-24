@@ -1,5 +1,5 @@
 body {
-    background-image: url('../static/img/espacio.jpg');
+    background-image: url('..//img/espacio.jpg');
     background-size: cover;
     background-position: center;
     font-family: 'Roboto', sans-serif;
@@ -31,15 +31,26 @@ label {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px;
+    border: none; /* Elimina el borde del input */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    background: rgba(255, 255, 255, 0.5);
+    color: #000; /* Cambia el color del texto del input */
 }
 
 input[type="submit"] {
     background: yellow;
     color: black;
     border: none;
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+input[type="submit"]:hover {
+    background: #ffcc00; /* Amarillo más oscuro al pasar el cursor sobre el botón */
+}
+

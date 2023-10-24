@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meditación guiada - Inicio</title>
-        <link rel="stylesheet" href="../static/css/index.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
         <script src="{{ url_for('static', filename='js/nombre.js') }}"></script>
     </head>
     <body>
@@ -15,8 +15,8 @@
             </header>
         </div>
         <div class="nombre">
-            <form id="nameForm"action="POST">
-                <label for="name">Ingrese su nombre:</label><br>
+            <form id="nameForm" method="post">
+                <label for="name">Ingrese su nombre</label><br>
                 <input type="text" id="name" name="name"><br>
                 <input type="submit" value="Enviar">
             </form>

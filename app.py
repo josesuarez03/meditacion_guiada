@@ -5,6 +5,7 @@ app = Flask(__name__)
 app.static_folder = 'static'
 app.secret_key = 'your_secret_key'
 
+@app.route('/', methods=['GET','POST'])
 def index():
     if request.method == 'POST':
         name = request.form.get('name')
