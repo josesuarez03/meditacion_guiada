@@ -8,6 +8,10 @@ app.static_folder = 'static'
 def index():
     return render_template('index.html')
 
+@app.route('/lobby', methods=['GET', 'POST'])
+def lobby():
+    return render_template('lobby.html')
+
 @app.route('/playa-escena', methods=['GET','POST'])
 def playa():
     return render_template('playa.html')

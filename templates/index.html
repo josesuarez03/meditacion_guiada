@@ -1,52 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meditación guiada</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="{{ url_for('static', filename='js/redirigir.js') }}"></script>
-</head>
-<body>
-    <a-scene cursor="rayOrigin: mouse">
-        <a-sky src="../static/img/espacio.jpg"></a-sky>
-
-        <!-- Suelo -->
-        <a-plane color="#888" rotation="-90 0 0" width="15" height="15"></a-plane>
-
-        <!-- Cubo de arte 1 con imagen del tamaño del cubo -->
-        <a-box position="-5 1 -4" width="4" height="2" depth="2" >
-            <a-entity position="0 0 1.01">
-                <a-image src="../static/img/playa.jpg" width="4" height="2" clickable="/playa-escena"></a-image>
-                <a-text value="Escena de Playa" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
-            </a-entity>
-        </a-box>
-
-        <!-- Cubo de arte 2 -->
-        <a-box position="0 1 0" width="4" height="2" depth="2" >
-            <a-entity position="0 0 1.01">
-                <a-image src="../static/img/templo_zen.jpg" width="4" height="2" clickable="/templo-zen-escena"></a-image>
-                <a-text value="Escena de Templo Zen" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
-            </a-entity>
-        </a-box>
-
-        <!-- Cubo de arte 3 -->
-        <a-box position="5 1 4" width="4" height="2" depth="2" >
-            <a-entity position="0 0 1.01">
-                <a-image src="../static/img/bosque.jpg" width="4" height="2" clickable="/bosque-escena"></a-image>
-                <a-text value ="Escena de Bosque" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
-            </a-entity>
-        </a-box>
-
-        <a-text value ="Bienvenido, seleccione una de las escenas." position ="0 1.5 5" color="#FFFF00" align ="center"></a-text>
-
-        <!-- Cámara con cursor -->
-        <a-entity camera look-controls wasd-controls position ="0 1.6 0">
-            <a-cursor></a-cursor>
-        </a-entity>
-
-    </a-scene>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meditación guiada - Inicio</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+        <script src="{{ url_for('static', filename='js/nombre.js') }}"></script>
+    </head>
+    <body>
+        <div class="encabezado">
+            <header>
+                <h1>Meditación guiada - Inicio</h1>
+            </header>
+        </div>
+        <div class="nombre">
+            <form id="nameForm"action="POST">
+                <label for="name">Ingrese su nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
 </html>
-
