@@ -1,5 +1,5 @@
 function leerMensaje(){
-    var mensaje = document.querySelector('a-text');
+    var mensaje = document.getElementById('mensaje');
     if (mensaje){
         var texto = mensaje.getAttribute('value');
 
