@@ -17,7 +17,6 @@ def auth_required(func):
     return decorated
 
 @app.route('/', methods=['GET','POST'])
-@auth_required
 def index():
     if request.method == 'POST':
         name = request.form.get('name')
@@ -34,7 +33,7 @@ def lobby():
 @app.route('/logout')
 def logout():
     session.pop('user_name', None)
-    return redirect(url_for('index'))
+    return redirect(url_for('/'))
 
 @app.route('/save-name', methods=['POST'])
 def save_name():
@@ -66,9 +65,12 @@ def page_not_found(e):
 def error_server(e):
     return render_template('500.html'), 500
 
+@app.before_request
+def clear_session():
+    if session.modified:
+        session.pop('user_name', None)
+
 if __name__ == '__main__':
-    # Limpia las sesiones al iniciar el servidor
-    app.before_request(lambda: session.modified and session.pop('user_name', None))
 
     app.run(debug=True)
 
