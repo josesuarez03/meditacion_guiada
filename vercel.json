@@ -5,5 +5,7 @@
     ],
     "routes": [
       { "src": "/(.*)", "dest": "/" }
-    ]
+    ],
+    "framework": "null"
   }
+  
