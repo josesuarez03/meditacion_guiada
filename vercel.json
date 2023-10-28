@@ -1,9 +1,9 @@
 {
     "version": 2,
     "builds": [
-      { "src": "meditacion_app/app.py", "use": "@vercel/python" }
+      { "src": "./app.py", "use": "@vercel/python" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "meditacion_app/app.py" }
+      { "src": "/(.*)", "dest": "/" }
     ]
   }
