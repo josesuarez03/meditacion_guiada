@@ -11,7 +11,7 @@
     <body>
         <a-scene cursor="rayOrigin: mouse">
             <!-- Imagen 2D como fondo -->
-            <a-sky src="../static/img/istockphoto-1299588786-612x612.jpg"></a-sky>
+            <a-sky src="../static/img/imagen_playa.jpeg"></a-sky>
 
             <!-- Botón para regresar al inicio -->
             <a-entity position="1 -0.25 -1" geometry="primitive: plane; width: 0.80; height: 0.25" material="color:#AAA" clickable="/lobby" text="value: Regresar al inicio; align: center; color: #000"></a-entity>
@@ -21,7 +21,8 @@
                 <a-cursor></a-cursor>
             </a-entity>
 
-            <a-entity id="ruido" sound="src: ../static/audio/ruido_playa.mp3; autoplay: true; volume: 1; loop: true" ></a-entity>
+            <!-- Musica y meditacion de fondo -->
+            <a-entity id="ruido" sound="src: ../static/audio/audio_playa.mp3; autoplay: true; volume: 1; loop: true" ></a-entity>
         </a-scene>
     </body>
 </html>

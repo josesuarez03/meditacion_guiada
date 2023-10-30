@@ -27,3 +27,27 @@ El lobby simula una galeria de artes en la infinidad del espacio, este tiene 3 e
 * Speech synthesys
 
 # Recursos
+
+Contenidos usados usados:
+
+ - Playa:
+    - Música: https://youtu.be/nQvr0t6BU8Q?si=5wF5aHx-X0aVZz38
+    - Voz: https://www.youtube.com/watch?v=pDigD65kLpE&t=4s
+    - Imagen de fondo: https://pixexid.com/image/sandy-beach-nkfj1lyv
+
+ - Templo Zen:
+    - Música: https://youtu.be/1xYCqtbZwaY?si=Thb7pjtAKZXs-hOE
+    - Voz: https://www.youtube.com/watch?v=pDigD65kLpE&t=4s
+    - Imagen de fondo: https://pixelz.cc/images/wat-arun-buddhist-temple-bangkok-thailand-uhd-4k-wallpaper/
+
+ - Bosque:
+    - Música: https://youtu.be/Hc3VUL9rOHU?si=O92lqmGV-hvuwv0O
+    - Voz: https://www.youtube.com/watch?v=pDigD65kLpE&t=4s
+    - Imagen de fondo: 
+
+# Agradecimientos
+
+Muchisimas gracias a Anabel Otero que ha sido tan amable de permitirnos hacer uso de su voz dentro de este proyecto.
+    Redes:
+     - Instagram: https://www.instagram.com/anabel_otero/
+     - Youtube: https://www.youtube.com/@AnabelOtero
