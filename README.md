@@ -43,7 +43,7 @@ Contenidos usados usados:
  - Bosque:
     - Música: https://youtu.be/Hc3VUL9rOHU?si=O92lqmGV-hvuwv0O
     - Voz: https://www.youtube.com/watch?v=pDigD65kLpE&t=4s
-    - Imagen de fondo: 
+    - Imagen de fondo: https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/golf_course_sunrise.jpg
 
 # Agradecimientos
 
