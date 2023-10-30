@@ -8,6 +8,8 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="{{ url_for('static', filename='js/redirigir.js') }}"></script>
     <script src="{{ url_for('static', filename='js/leer_texto.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/genero.js') }}"></script>
+
 
 </head>
 <body>
@@ -41,7 +43,7 @@
             </a-entity>
         </a-box>
 
-        <a-text id="mensaje" value ="Bienvenido {{user_name}}, seleccione una de las escenas." position ="0 1.5 5" color="#FFFF00" align ="center"></a-text>
+        <a-text id="mensaje" data-user-name="{{ user_name }}" value ="" position ="0 1.5 5" color="#FFFF00" align ="center"></a-text>
 
         <!-- Cámara con cursor -->
         <a-entity camera look-controls wasd-controls position ="0 1.6 0">
