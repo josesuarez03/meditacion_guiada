@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meditación guiada - Lobby</title>
+    <!-- Ensure the correct path to your JavaScript files -->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="{{ url_for('static', filename='js/redirigir.js') }}"></script>
     <script src="{{ url_for('static', filename='js/leer_texto.js') }}"></script>
     <script src="{{ url_for('static', filename='js/genero.js') }}"></script>
-
-
 </head>
 <body>
     <a-scene cursor="rayOrigin: mouse">
         <a-sky src="../static/img/espacio.jpg"></a-sky>
 
-        <!-- Suelo -->
-        <a-plane color="#888" rotation="-90 0 0" width="15" height="15"></a-plane>
+        <!-- Ground with texture -->
+        <a-plane color="#888" rotation="-90 0 0" width="15" height="15">
+            <a-image src="../static/img/ground_texture.jpg" width="15" height="15"></a-image>
+        </a-plane>
 
-        <!-- Cubo de arte 1 con imagen del tamaño del cubo -->
-        <a-box position="-5 1 -4" width="4" height="2" depth="2" >
+        <!-- Art Cube 1 with image -->
+        <a-box position="-5 1 -4" width="4" height="2" depth="2" material="src: url(../static/img/playa.jpg);">
             <a-entity position="0 0 1.01">
-                <a-image src="../static/img/playa.jpg" width="4" height="2" clickable="/playa-escena"></a-image>
                 <a-text value="Escena de Playa" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
             </a-entity>
         </a-box>
 
-        <!-- Cubo de arte 2 -->
-        <a-box position="0 1 0" width="4" height="2" depth="2" >
+        <!-- Art Cube 2 -->
+        <a-box position="0 1 0" width="4" height="2" depth="2" material="src: url(../static/img/templo_zen.jpg);">
             <a-entity position="0 0 1.01">
-                <a-image src="../static/img/templo_zen.jpg" width="4" height="2" clickable="/templo-zen-escena"></a-image>
                 <a-text value="Escena de Templo Zen" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
             </a-entity>
         </a-box>
 
-        <!-- Cubo de arte 3 -->
-        <a-box position="5 1 4" width="4" height="2" depth="2" >
+        <!-- Art Cube 3 -->
+        <a-box position="5 1 4" width="4" height="2" depth="2" material="src: url(../static/img/bosque.jpg);">
             <a-entity position="0 0 1.01">
-                <a-image src="../static/img/bosque.jpg" width="4" height="2" clickable="/bosque-escena"></a-image>
-                <a-text value ="Escena de Bosque" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
+                <a-text value="Escena de Bosque" position="0 2.2 0" color="#FFFF00" align="center"></a-text>
             </a-entity>
         </a-box>
 
-        <a-text id="mensaje" data-user-name="{{ user_name }}" value ="" position ="0 1.5 5" color="#FFFF00" align ="center"></a-text>
+        <!-- Display Message -->
+        <a-text id="mensaje" data-user-name="{{ user_name }}" value="" position="0 1.5 5" color="#FFFF00" align="center"></a-text>
 
-        <!-- Cámara con cursor -->
-        <a-entity camera look-controls wasd-controls position ="0 1.6 0">
+        <!-- Camera with cursor -->
+        <a-entity camera look-controls wasd-controls position="0 1.6 0">
             <a-cursor></a-cursor>
         </a-entity>
 
-        <a-entity id="ruido" sound="src: ../static/audio/ruido_blanco.mp3; autoplay: true; volume: 2; loop: true" ></a-entity>
-
+        <!-- Background Noise -->
+        <a-entity id="ruido" sound="src: ../static/audio/ruido_blanco.mp3; autoplay: true; volume: 2; loop: true"></a-entity>
     </a-scene>
 </body>
 </html>
-
