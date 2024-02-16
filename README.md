@@ -1,6 +1,11 @@
 # Meditacion Guiada
 Este programa ayudar a los usuarios reducir sus niveles de estres con escenas relajantes y una meditación guiada. Utilzamos para desplegar la aplicación pythonanywhere, url: https://josesuarezb03.pythonanywhere.com/
 
+# Ramas
+* Main = rama principal
+* Develop = rama usada para la revision y verificacion de codigo antes de pasar a la rama Main
+* Feature = rema de modificacion y mejora de código
+
 ## Caracteristicas del programa:
 * Se utiliza un servidor 'Flask' para las rutas
 * Tiene una ventana principal (estática) donde el usuario introduce su nombre
