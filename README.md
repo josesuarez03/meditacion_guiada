@@ -1,5 +1,5 @@
 # Meditacion Guiada
-Este programa ayudar a los usuarios reducir sus niveles de estres con escenas relajantes y una meditación guiada. Utilzamos para desplegar la aplicación pythonanywhere, url: https://josesuarezb03.pythonanywhere.com/
+Este programa ayudar a los usuarios reducir sus niveles de estres con escenas relajantes y una meditación guiada. Utilizamos para desplegar la aplicación pythonanywhere, url: https://josesuarezb03.pythonanywhere.com/
 
 # Ramas
 * Main = rama principal
